@@ -1,5 +1,38 @@
-body { font-family: Arial; margin: 0; padding: 0; }
-header, footer { background: #4CAF50; color: white; padding: 1rem; text-align: center; }
-nav a { margin: 0 10px; color: white; text-decoration: none; }
-main { padding: 1rem; text-align: center; }
-img { max-width: 100%; height: auto; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+header, footer {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  padding: 2rem;
+  text-align: center;
+}
+main img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+footer p {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+}
