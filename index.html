@@ -1,92 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica de Cirugía Plástica</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background-image: url('imagenes/portada.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            color: white;
-            text-shadow: 2px 2px 4px #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3em;
-            margin: 0.2em 0;
-        }
-        p {
-            font-size: 1.5em;
-            margin-bottom: 1em;
-        }
-        a.boton {
-            background-color: #d63384;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-        nav {
-            background: #f0f0f0;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-    </style>
-    <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>AppFusion - Cirugía Plástica</title>
 </head>
 <body>
-
-<div style="text-align: center; margin-top: 20px;">
-    <img src="logo.png" alt="Logo AppFusion" style="max-width: 200px;">
-</div>
-<div style="text-align: center; margin-top: 20px;">
-    <img src="imagenes/portada.jpg" alt="Portada" style="max-width: 90%; height: auto;">
-</div>
-<div style="text-align: center; margin: 30px auto; font-family: sans-serif;">
-    <h2 style="font-size: 1.5em; margin-bottom: 5px;">Belleza, confianza y tecnología en la palma de tu mano</h2>
-    <p style="font-size: 1.1em; color: #333;">Una app que realza tu marca como cirujana plástica</p>
-</div>
-
-    <div class="hero">
-        <h1>Clínica de Cirugía Plástica</h1>
-        <p>Estética y reconstrucción con armonía y precisión</p>
-        <a href="servicios.html" class="boton">Ver servicios</a>
-    </div>
+  <header>
+    <h1>Dra. Sofía Mendoza</h1>
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="sobre-mi.html">Sobre mí</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="galeria.html">Galería</a>
-        <a href="testimonios.html">Testimonios</a>
-        <a href="preguntas.html">Preguntas</a>
-        <a href="contacto.html">Contacto</a>
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="galeria.html">Galería</a>
+      <a href="testimonios.html">Testimonios</a>
+      <a href="preguntas.html">Preguntas</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(() => console.log('Service Worker registrado'));
-  }
-</script>
-
+  </header>
+  <main>
+    <img src="imagenes/cirujana1.jpg" alt="Cirujana Plástica" />
+    <p>Especialista en cirugía plástica estética y reconstructiva.</p>
+  </main>
+  <footer>
+    <a href="https://wa.me/573043369832" target="_blank">📱 Contáctanos por WhatsApp</a>
+  </footer>
 </body>
 </html>

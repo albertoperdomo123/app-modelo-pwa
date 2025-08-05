@@ -1,8 +1,18 @@
-
-self.addEventListener('install', function(event) {
-  console.log('[Service Worker] Instalado');
+self.addEventListener('install', e => {
+  e.waitUntil(
+    caches.open('appfusion').then(cache => {
+      return cache.addAll([
+        'index.html',
+        'style.css',
+        'imagenes/logo.png'
+      ]);
+    })
+  );
 });
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(fetch(event.request));
+self.addEventListener('fetch', e => {
+  e.respondWith(
+    caches.match(e.request).then(response => {
+      return response || fetch(e.request);
+    })
+  );
 });
